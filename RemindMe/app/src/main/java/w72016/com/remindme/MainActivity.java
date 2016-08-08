@@ -44,7 +44,7 @@ public class MainActivity extends ActionBarActivity {
 
         viewPager =(ViewPager) findViewById(R.id.viewPager);
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
-        TabsPagerFragmentAdapter adapter = new TabsPagerFragmentAdapter(getSupportFragmentManager());
+        TabsPagerFragmentAdapter adapter = new TabsPagerFragmentAdapter(this,getSupportFragmentManager());
 
         viewPager.setAdapter(adapter);
 
